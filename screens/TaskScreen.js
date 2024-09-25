@@ -1,8 +1,7 @@
-import * as React from "react";
 import { View, Text, FlatList, Modal, TextInput } from "react-native";
 import { Checkbox, Card, Button, Avatar, IconButton } from "react-native-paper";
 
-import * as Notifications from "expo-notifications";
+import Notifications from "expo-notifications";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -119,7 +118,6 @@ const TaskScreen = () => {
 
   return (
     <View style={{ flex: 1 }}>
-      {/* Modal para adicionar nova tarefa */}
       <Modal
         visible={modalVisible}
         onRequestClose={() => setModalVisible(false)}

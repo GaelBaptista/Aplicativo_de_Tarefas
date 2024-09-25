@@ -1,13 +1,12 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import { enableScreens } from "react-native-screens"; // Importação necessária
+import { enableScreens } from "react-native-screens";
 
 import TaskScreen from "./screens/TaskScreen";
 import { Text, View } from "react-native";
 
-// Habilita otimização de telas
-enableScreens(); // Coloque logo após as importações
+enableScreens();
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -33,10 +32,10 @@ export default function App() {
       <Tab.Navigator
         screenOptions={{
           tabBarLabelStyle: { fontSize: 14, fontWeight: "bold" },
-          tabBarStyle: { backgroundColor: "white" }, // Cor do fundo
+          tabBarStyle: { backgroundColor: "white" },
           tabBarIndicatorStyle: {
-            backgroundColor: "black", // Cor do traço indicador da aba ativa
-            height: 3, // Espessura do traço
+            backgroundColor: "black",
+            height: 3,
           },
         }}
       >
